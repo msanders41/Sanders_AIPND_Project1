@@ -1,0 +1,74 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                   Lemur_01.jpg  label:                          l
+ 2 key:        Golden_Retriever_01.jpg  label:                          g
+ 3 key:                  Toilet_01.jpg  label:                          t
+ 4 key:        Golden_Retriever_02.jpg  label:                          g
+
+     MATCH:
+
+                  Lemur_01.jpg: 
+Real:                      lemur   Classifier: madagascar cat, ring-tailed lemur, lemur catta
+
+       Golden_Retriever_01.jpg: 
+Real:           golden retriever   Classifier:               golden retriever
+
+                 Toilet_01.jpg: 
+Real:                     toilet   Classifier:                    toilet seat
+
+ NOT A MATCH:
+
+       Golden_Retriever_02.jpg: 
+Real:           golden retriever   Classifier: pembroke, pembroke welsh corgi, corgi
+
+# Total Images 4 # Matches: 3 # NOT Matches: 1
+
+     MATCH:
+
+                  Lemur_01.jpg: 
+Real:                      lemur   Classifier: madagascar cat, ring-tailed lemur, lemur catta  
+PetLabelDog: 0  ClassLabelDog: 0
+
+       Golden_Retriever_01.jpg: 
+Real:           golden retriever   Classifier:               golden retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                 Toilet_01.jpg: 
+Real:                     toilet   Classifier:                    toilet seat  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+       Golden_Retriever_02.jpg: 
+Real:           golden retriever   Classifier: pembroke, pembroke welsh corgi, corgi  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 3 # NOT Matches: 1
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  50.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  50.0
+CNN Model Architecture: alexnet
+Number of images: 2
+Number of images of dogs: 2
+Number of images NOT of dogs: 2
+pct_match: 75.0%
+pct_correct_dogs: 100.0%
+pct_correct_breed: 50.0%
+pct_correct_notdogs: 100.0%
+Image is incorrectly classified as a dog when it is not for:
+
+Image is agreed to be dog but breed is disagreed upon for:
+
+Pet Image Label: golden retriever; Classifier Label: pembroke, pembroke welsh corgi, corgi
+
+** Total Elapsed Runtime: 0:0:0
